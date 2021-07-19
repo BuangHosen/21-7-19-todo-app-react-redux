@@ -1,0 +1,18 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    ["emotion", { "inline": true }],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          // mapped the root of the project to ~
+          "~": "."
+          // workaround for our ui library to use the react from core instead the one in theirs
+          // "react": "./node_modules/@domus/domus-ui/node_modules/react",
+          // "react-dom": "./node_modules/@domus/domus-ui/node_modules/react-dom"
+        }
+      }
+    ]
+  ]
+}
