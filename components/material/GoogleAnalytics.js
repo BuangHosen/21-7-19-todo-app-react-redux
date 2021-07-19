@@ -1,7 +1,8 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { Helmet } from "react-helmet";
 
-const GA_MEASUREMENT_ID = process.env.REACT_APP_GA_MEASUREMENT_ID;
+// * Do include Measurement ID in environment variable
+const GA_MEASUREMENT_ID = "G-2TG5EEXK9T";
 
 const GoogleAnalytics = () => {
   return (

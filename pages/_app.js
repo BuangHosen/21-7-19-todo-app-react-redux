@@ -18,6 +18,7 @@ import { jssPreset, StylesProvider, ThemeProvider } from "@material-ui/core";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import MomentUtils from "@date-io/moment";
 import { SnackbarProvider } from "notistack";
+import GoogleAnalytics from "~/components/material/GoogleAnalytics";
 
 import createStore from "~/redux";
 import "~/config";
@@ -54,6 +55,7 @@ class AppRoot extends App {
               <SnackbarProvider dense maxSnack={3}>
                 <Layout>
                   <PersistGate persistor={store.__PERSISTOR} loading={null}>
+                    <GoogleAnalytics />
                     <Component {...pageProps} />
                   </PersistGate>
                 </Layout>
